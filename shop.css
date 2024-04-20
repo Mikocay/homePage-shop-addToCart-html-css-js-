@@ -1,0 +1,509 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Header */
+
+.header-content {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-logo img {
+    padding-right: 0.5rem;
+}
+
+.header-menu {
+    color: #274C5B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+}
+
+.header-menu li {
+    display: inline-block;
+    padding: 0.2rem;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.header-icons .search {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons div {
+    padding: .5rem;
+}
+
+.header-icons .cart a {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    background: #fff;
+    padding: .3rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 159px;
+    height: 66px;
+    flex-shrink: 0;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-icons .cart img {
+    padding-bottom: 4px;
+}
+
+.header-icons .cart img {
+    padding-right: 0.5rem;
+}
+
+.header-icons input {
+    width: 300px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #eee;
+}
+
+/* Shopping cart */
+
+.cartTab{
+    width: 400px;
+    background-color: #eee;
+    color: black;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    z-index: 1;
+    border-radius: 20px;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #7DAF40;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1rem;
+}
+.cartTab .close{
+    background-color: lightgray;
+}
+
+.cartTab .totalPriceItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartTab .totalPriceItem p {
+    color: #274C5B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none;
+}
+
+.listCart .item img{
+    width: 100%;
+    padding-left: .5rem;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: black;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.banner .text {
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    color: #274C5B;
+    font-size: 20px;
+}
+
+/* Product */
+
+.products {
+    box-sizing: border-box;
+}
+
+.products .header {
+    border: 0px solid;
+    /* display: contents; */
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.products .header h3 {
+    color: #7EB693;
+    font-size: 36px;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products .header h1 {
+    color: #274C5B;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    box-sizing: border-box;
+    /* Khoảng cách giữa các ô */
+    position: relative;
+    padding: 0 10rem;
+}
+
+.listProduct .box {
+    border: 0px solid;
+    border-radius: 10px;
+    padding: .5rem;
+    box-shadow: 0 .1rem 0.5rem rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.listProduct .box img {
+    width: 230;
+    height: 250px;
+}
+
+.listProduct .box .box-foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.listProduct .box .stars img {
+    width: 80%;
+    height: auto;
+}
+
+.listProduct .box .box-detail {
+    color: #274C5B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: .5rem;
+    
+}
+
+.listProduct .box .addCart{
+    display: inline-block;
+    border: 0px solid;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: .5rem 1rem;
+    background: #274C5B;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.listProduct .box .box-header {
+    display: inline-block;
+    border: 0px solid;
+    font-family: "Open Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: .5rem 1rem;
+    background: #274C5B;
+    border-radius: 10px;
+}
+
+.listProduct .box .box-header h3 {
+    color: white;
+}
+
+.listProduct .box .box-foot .price {
+    color: #274C5B;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.listProduct .box .box-foot .stars {
+    display: flex;
+    align-items: center;
+}
+
+.listProduct .box .box-body {
+    border-bottom: 1px solid lightgray;
+    /* hoặc border-top tùy theo vị trí bạn muốn đặt đường gạch */
+    margin: 5px 20px;
+}
+
+.products .product-foot {
+    /* display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem;
+    padding: 10px 15px */
+    border: 0px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.products .product-foot a img {
+    margin: 0;
+    padding-left: .5rem;
+}
+
+
+.product-foot a {
+    display: flex;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #274C5B;
+    color: white;
+    color: #FFF;
+
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Organe BG */
+
+.organeBG img {
+    border-radius: 20px;
+}
+
+.organeBG {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.organeBG .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.organeBG .body {
+    border: 0px solid;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.organeBG .body .text {
+    display: flex;
+    white-space: pre-line;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.organeBG .body div {
+    padding: 5px;
+}
+
+.organeBG .body .input input {
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.organeBG .body .subcribe a {
+    background: #274C5B;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+
+.footer .organick {
+    text-align: center;
+    margin: 0rem 2rem;
+}
+
+.footer .organick .body {
+    white-space: pre-line;
+}
+
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .header-menu {
+        width: 217px;
+    }
+
+    .organeBG .body .text {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .header-menu {
+        width: 217px;
+    }
+
+    .header-icons input {
+        width: 0;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .organeBG .body .text {
+        font-size: 12px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-icons input {
+        width: 0;
+    }
+
+    .header-menu {
+        width: 217px;
+    }
+
+    .organeBG {
+        margin-top: 2rem;
+    }
+
+    .organeBG .body .text {
+        font-size: 13px ;
+    }
+
+    .footer{
+        margin: 2rem 1.5rem;
+    }
+}

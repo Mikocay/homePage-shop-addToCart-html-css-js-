@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "classify": "Vegetable",
+        "name":"Calabrese Broccoli",
+        "price": 13.00,
+        "image": "img/image1.png"
+    },
+    {
+        "id": 2,
+        "classify": "Fresh",
+        "name":"Fresh Banana Fruites",
+        "price": 14.00,
+        "image": "img/image2.png"
+    },
+    {
+        "id": 3,
+        "classify": "Millets",
+        "name":"White Nuts",
+        "price": 15.00,
+        "image": "img/image3.png"
+    },
+    {
+        "id": 4,
+        "classify": "Vegetable",
+        "name":"Vegan Red Tomato",
+        "price": 17.00,
+        "image": "img/image4.png"
+    },
+    {
+        "id": 5,
+        "classify": "Health",
+        "name":"Mung Bean",
+        "price": 11.00,
+        "image": "img/image5.png"
+    },
+    {
+        "id": 6,
+        "classify": "Nuts",
+        "name":"Brown Hazelnut",
+        "price": 12.00,
+        "image": "img/image6.png"
+    },
+    {
+        "id": 7,
+        "classify": "Fresh",
+        "name":"Eggs",
+        "price": 17.00,
+        "image": "img/image7.png"
+    },
+    {
+        "id": 8,
+        "classify": "Fresh",
+        "name":"Zelco Suji Elaichi Rusk",
+        "price": 15.00,
+        "image": "img/image8.png"
+    },
+    {
+        "id": 9,
+        "classify": "Health",
+        "name":"Mung Bean",
+        "price": 11.00,
+        "image": "img/image9.png"
+    },
+    {
+        "id": 10,
+        "classify": "Nuts",
+        "name":"White Hazelnut",
+        "price": 12.00,
+        "image": "img/image10.png"
+    },
+    {
+        "id": 11,
+        "classify": "Fresh",
+        "name":"Fresh Corn",
+        "price": 17.00,
+        "image": "img/image11.png"
+    },
+    {
+        "id": 12,
+        "classify": "Fresh",
+        "name":"Organic Almonds",
+        "price": 15.00,
+        "image": "img/image12.png"
+    }
+    
+]

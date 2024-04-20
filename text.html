@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text on Image</title>
+<style>
+    .container {
+        position: relative;
+        width: 500px; /* Thay đổi kích thước tùy theo kích thước ảnh */
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Màu chữ */
+        font-size: 24px; /* Kích thước chữ */
+        font-weight: bold; /* Độ đậm chữ */
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền của văn bản */
+        padding: 10px; /* Khoảng cách giữa chữ và viền của nền */
+        white-space: pre-line; /* Xuống hàng chữ */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="your-image.jpg" alt="Your Image">
+    <div class="text">Your Long Text Here With Line Breaks</div>
+</div>
+
+</body>
+</html>
